@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 20px;
+
+  background-color: #18181B;
+  
+  font-family: sans-serif;
+}
+
+.logo {
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+
+.container-input {
+  width: 100%;
+  max-width: 480px;
+  margin: 14px 0;
+}
+
+.container-input span {
+  color: #FFF;
+  font-size: 22px;
+}
+
+.container-input input, .container-input button {
+  width: 100%;
+}
+
+#slider {
+  width: 100%;
+  height: 18px;
+
+  margin-top: 8px;
+
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #DFDFDF;
+}
+
+.button-generator {
+  height: 40px;
+  margin-top: 10px;
+
+  color: #FFF;
+  font-weight: bold;
+  font-size: 20px;
+
+  background-color: #39aa27;
+  border: 0;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button-generator:hover {
+  background-color: #329423;
+}
+
+.container-password{
+  width: 100%;
+  max-width: 480px;
+  margin: 14px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility:visible;
+  opacity: 1;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.container-password.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.title {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 28px;
+
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+#password {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.40);
+
+  border-radius: 5px;
+  border: 1px solid #313131;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+
+#password:hover {
+  transform: scale(1.05);
+}
+
+.copy {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  
+  text-align: center;
+  
+  background-color: #0f0f0f;
+  color: #FFFFFF;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.5s;
+}
+
+.container-password:hover .copy {
+  visibility: visible;
+  opacity: 1;
+}
